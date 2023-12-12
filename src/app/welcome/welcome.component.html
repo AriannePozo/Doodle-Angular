@@ -1,8 +1,8 @@
 <app-header></app-header>
-<div class="wels" *ngIf="!isLoging"><h1>Sign Up</h1></div>
-<div class="wels" *ngIf="isLoging"><h1>Login</h1></div>
+<div class="wels" *ngIf="!isLoging"><h1>Registrar</h1></div>
+<div class="wels" *ngIf="isLoging"><h1>Iniciar Sesión</h1></div>
 <div class="intro" *ngIf="!isLoging">
-  <p style="font-size: 18px">Create an Account</p>
+  <p style="font-size: 18px">Crear Cuenta</p>
 </div>
 <div class="wels">
   <form class="example-form" [formGroup]="welcomeForm">
@@ -23,20 +23,20 @@
             welcomeForm.get('emailAdd')?.hasError('required') &&
             welcomeForm.get('emailAdd')?.touched
           "
-          >Email is required</span
+          >El email es necesario</span
         >
         <span
           *ngIf="
             welcomeForm.get('emailAdd')?.errors &&
             welcomeForm.get('emailAdd')?.hasError('email')
           "
-          >Email is invalid</span
+          >El email no es válido</span
         >
       </div>
     </div>
     <div>
       <mat-form-field class="example-full-width" appearance="outline">
-        <mat-label>Password</mat-label>
+        <mat-label>Contraseña</mat-label>
         <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" type="button">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
@@ -49,7 +49,7 @@
             welcomeForm.get('password')?.hasError('required') &&
             welcomeForm.get('password')?.touched
           "
-          >Password is required</span
+          >La contraseña es necesaria</span
         >
       </div>
     </div>
@@ -60,14 +60,14 @@
         (click)="onWelcome()"
         [disabled]="welcomeForm.invalid"
       >
-        {{ isLoging ? "Login" : "SignUp" }}
+        {{ isLoging ? "Iniciar Sesión" : "Crear Cuenta" }}
       </button>
     </div>
     <div class="intro" *ngIf="!isLoging">
-      <p>Already have an Account? <a (click)="onSwitch()">Login Now</a></p>
+      <p>¿Ya tienes una cuenta? <a (click)="onSwitch()">Iniciar Sesión</a></p>
     </div>
     <div class="intro" *ngIf="isLoging">
-      <p>New User? <a (click)="onSwitch()">Sign Up</a></p>
+      <p>¿Nuevo usuario? <a (click)="onSwitch()">Crear Cuenta</a></p>
     </div>
   </form>
 </div>

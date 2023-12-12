@@ -1,7 +1,8 @@
 <div *ngIf="!isAccess" class="noData">
-  <h2>Kindly Login/SignUp to add new Notes and Tasks!!</h2>
-  <button class="click" (click)="onNewUser()">Login to Continue</button>
+  <h2>¡Inicia Sesión para ver tus notas!</h2>
+  <button class="click" (click)="onNewUser()">Iniciar Sesión</button>
 </div>
+
 <div *ngIf="isAccess && !isLoading" class="myfield">
   <div>
     <mat-form-field appearance="outline" class="formInput" align="end">
