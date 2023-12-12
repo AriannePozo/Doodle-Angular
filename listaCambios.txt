@@ -1,0 +1,23 @@
+CAMBIAR:
+
+PRIMERA PARTE
+-------------
+Títulos
+Slogan
+Paleta de colores
+Tipo de fuente
+
+
+TRADUCIR:
+Inicio Sesión
+Registro
+Index
+
+SEGUNDA PARTE:
+--------------
+Cambiar el html y css:
+	InicioSesión / Registro
+	Notas
+	Index
+
+
