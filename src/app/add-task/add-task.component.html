@@ -5,7 +5,7 @@
     <form class="example-form" [formGroup]="myForm">
       <div>
         <mat-form-field class="example-full-width" appearance="outline">
-          <mat-label>Title</mat-label>
+          <mat-label>Título</mat-label>
           <input
             matInput
             type="text"
@@ -19,11 +19,11 @@
               myForm.get('title')?.hasError('required') &&
               myForm.get('title')?.touched
             "
-            >Title is required</mat-hint
+            >El título de la nota es necesario</mat-hint
           >
         </mat-form-field>
         <mat-form-field class="example-full-width" appearance="outline">
-          <mat-label>Content</mat-label>
+          <mat-label>Contenido</mat-label>
           <input
             matInput
             #message
@@ -40,15 +40,15 @@
               myForm.get('content')?.hasError('required') &&
               myForm.get('content')?.touched
             "
-            >Content is required</mat-hint
+            >El contenido de la nota es necesario</mat-hint
           >
         </mat-form-field>
         <mat-form-field appearance="outline">
-          <mat-label>Priority</mat-label>
+          <mat-label>Prioridad</mat-label>
           <mat-select formControlName="priority">
-            <mat-option value="High">High</mat-option>
-            <mat-option value="Medium">Medium</mat-option>
-            <mat-option value="Low">Low</mat-option>
+            <mat-option value="High">Alta</mat-option>
+            <mat-option value="Medium">Media</mat-option>
+            <mat-option value="Low">Baja</mat-option>
           </mat-select>
           <mat-hint
             style="color: red; margin-left: -10px"
@@ -57,7 +57,7 @@
               myForm.get('priority')?.hasError('required') &&
               myForm.get('priority')?.touched
             "
-            >Assign a Priority to Task</mat-hint
+            >¡Asignar la prioridad a una nota es importante!</mat-hint
           >
         </mat-form-field>
         <div>
@@ -69,7 +69,7 @@
             type="submit"
             [disabled]="myForm.invalid"
           >
-            Noted
+            Guardar Nota
           </button>
           <button
             *ngIf="isEdit"
@@ -79,7 +79,7 @@
             type="submit"
             [disabled]="myForm.invalid"
           >
-            Edit Note
+            Editar Nota
           </button>
         </div>
       </div>
