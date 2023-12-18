@@ -10,17 +10,19 @@ import { MatSnackBar, MatSnackBarRef } from '@angular/material/snack-bar';
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.css'],
 })
+
 export class WelcomeComponent implements OnInit {
   welcomeForm!: FormGroup;
   msg: any;
   hide:boolean=true;
-  isLoging: boolean = false;
+   isLoging: boolean = true; //Se cambió a true para que aparezca el login primero
   constructor(
     private route: Router,
     private data: DataService,
     private auth: AuthService,
     private _snackBar: MatSnackBar
   ) {}
+
   ngOnInit(): void {
     this.welcomeForm = new FormGroup({
       emailAdd: new FormControl('', [Validators.required, Validators.email]),
@@ -45,7 +47,8 @@ export class WelcomeComponent implements OnInit {
         (res: any) => {
           if (res) {
             this.auth.isAccess=true;
-            this.route.navigate(['notes']);
+            this.isLoging = true; //Se añadió esta linea para que redirija a login luego de registrarse
+            // this.route.navigate(['notes']);
             this.data.getId(res.idToken,res.localId);
           }
         },
