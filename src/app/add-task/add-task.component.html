@@ -1,7 +1,7 @@
 <div class="container addT">
   <div>
-    <div *ngIf="!isEdit"><h1 style="text-align: center">Add Your Note</h1></div>
-    <div *ngIf="isEdit"><h1 style="text-align: center">Edit Your Note</h1></div>
+    <div *ngIf="!isEdit"><h1 style="text-align: center">Añadir Nota</h1></div>
+    <div *ngIf="isEdit"><h1 style="text-align: center">Editar Nota</h1></div>
     <form class="example-form" [formGroup]="myForm">
       <div>
         <mat-form-field class="example-full-width" appearance="outline">
@@ -57,7 +57,7 @@
               myForm.get('priority')?.hasError('required') &&
               myForm.get('priority')?.touched
             "
-            >¡Asignar la prioridad a una nota es importante!</mat-hint
+            >¡Asigna la prioridad a una nota!</mat-hint
           >
         </mat-form-field>
         <div>

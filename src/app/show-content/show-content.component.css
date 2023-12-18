@@ -104,8 +104,18 @@ h2:hover {
 }
 .myfield{
   display: flex;
+  margin-left: 10px;
 }
 .formInput{
   width: 200px;
   height: auto;
+}
+
+.logout {
+  width: 215px;
+  height: 55px;
+  background-color: #3D3B8E;
+  color: #ffff;
+  border-width: 0;
+  border-radius: 5px;
 }

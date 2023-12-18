@@ -12,7 +12,7 @@ import { DataService } from '../data.service';
 })
 export class ShowContentComponent implements OnInit {
   cardShow: any = [];
-  priorities:any=['Low','Medium','High'];
+  priorities:any=['Baja','Media','Alta'];
   isLoading: boolean = false;
   isAccess: boolean = true;
   title: string = '';
@@ -131,5 +131,9 @@ export class ShowContentComponent implements OnInit {
     if (value !== 'None') {
       this.cardShow = this.allData.filter((x: any) => x.priority === value);
     } else this.cardShow = this.allData;
+  }
+  
+  onLogout() {  //Funcion para desloguearse denegando el acceso
+    this.isAccess = false;
   }
 }

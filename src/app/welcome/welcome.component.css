@@ -8,13 +8,13 @@
 	src: url('/assets/fonts/Rowdies-Regular.ttf') format('truetype');
 }
 
-.wels{
+.wels{ /*Es donde estan ubidacas el login/registro*/
     margin: 120px auto;
     display: flex;
     justify-content: center;
 }
 
-.wels h1{
+.wels h1{ /* Se hizo el cambio del titulo de Login/Registro*/
     margin-top: 10px;
     font-family: 'Rowdies', sans-serif;
     font-size: 45px;
