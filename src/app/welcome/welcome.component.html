@@ -1,9 +1,9 @@
 <app-header></app-header>
-<div class="wels" *ngIf="!isLoging"><h1>Registro</h1></div>
+
 <div class="wels" *ngIf="isLoging"><h1>Inicio de Sesión</h1></div>
-<div class="intro" *ngIf="!isLoging">
-  <p style="font-size: 18px">Crear Cuenta</p>
-</div>
+<div class="wels" *ngIf="!isLoging"><h1>Registro</h1></div>
+<div class="intro" *ngIf="!isLoging"><p style="font-size: 18px">Crear Cuenta</p></div>
+
 <div class="wels">
   <form class="example-form" [formGroup]="welcomeForm">
     <div>
@@ -16,6 +16,7 @@
           placeholder="Ex. abc@example.com"
         />
       </mat-form-field>
+      
       <div class="error">
         <span
           *ngIf="
@@ -34,6 +35,7 @@
         >
       </div>
     </div>
+
     <div>
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>Contraseña</mat-label>
@@ -53,6 +55,7 @@
         >
       </div>
     </div>
+
     <div class="intro">
       <button
         mat-raised-button
@@ -63,11 +66,14 @@
         {{ isLoging ? "Iniciar Sesión" : "Registrar" }}
       </button>
     </div>
+
     <div class="intro" *ngIf="!isLoging">
       <p>¿Ya tienes una cuenta? <a (click)="onSwitch()">Iniciar Sesión</a></p>
     </div>
+
     <div class="intro" *ngIf="isLoging">
       <p>¿Nuevo usuario? <a (click)="onSwitch()">Crear Cuenta</a></p>
     </div>
+
   </form>
 </div>

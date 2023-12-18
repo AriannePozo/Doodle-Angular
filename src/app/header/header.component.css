@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'RubikBubbles';
+	src: url('/assets/fonts/RubikBubbles-Regular.ttf') format('truetype');
+  }
+  @font-face {
+	font-family: 'Rowdies';
+	src: url('/assets/fonts/Rowdies-Regular.ttf') format('truetype');
+  }
+
+
 header {
 	text-align: center;
 	width: 100%;
@@ -12,19 +22,19 @@ header .overlay{
 	width: 100%;
 	height: 100%;
 	padding: 20px;
-	color: #cf1a1a;
+	color: #ffff;
 	text-shadow: 1px 1px 1px #333;
-    background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+    background-image: linear-gradient( 135deg, #6883BA 10%, #CAF0F8 100%); /*Color del header*/
 	
 }
 
 h1 {
-	font-family: 'Dancing Script', cursive;
-	font-size: 40px;
+	font-family: 'RubikBubbles', sans-serif;
+	font-size: 80px;
 }
 
 h3{
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 20px;
+	font-family: 'Rowdies', sans-serif;
+	margin-bottom: 15px;
     color: white;
 }

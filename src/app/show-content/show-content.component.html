@@ -30,12 +30,15 @@
 <div *ngIf="isLoading && isAccess" class="sniper">
   <mat-spinner [diameter]="40"></mat-spinner>
 </div>
+
 <div *ngIf="isLoading && isAccess" class="sniper2">
     <p class="process">Processing request....</p>
 </div>
+
 <div *ngIf="cardShow.length === 0 && !isLoading && isAccess" class="noData">
-  <p>All your Notes are shown here!!</p>
+  <p>¡Todas tus notas se mostrarán aquí!</p>
 </div>
+
 <div *ngIf="!isLoading && isAccess">
   <div
     *ngFor="let card of cardShow"

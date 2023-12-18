@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    /* Star background o Fondo de estrellitas */
+    background-color: #fffffd;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #fffffd 20%,
+     #fffffd 80%, transparent 80%, transparent),
+      radial-gradient(circle, transparent 20%, #fffffd 20%, #fffffd 80%, transparent 80%, transparent) 15px 15px,
+       linear-gradient(#fbfbb4 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px,
+        linear-gradient(90deg, #fbfbb4 1.2000000000000002px, #fffffd 1.2000000000000002px) -0.6000000000000001px 0;
+    background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+}
