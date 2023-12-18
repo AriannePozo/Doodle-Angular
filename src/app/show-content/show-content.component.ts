@@ -12,7 +12,7 @@ import { DataService } from '../data.service';
 })
 export class ShowContentComponent implements OnInit {
   cardShow: any = [];
-  priorities:any=['Baja','Media','Alta'];
+  priorities:any=['Low','Medium','High'];
   isLoading: boolean = false;
   isAccess: boolean = true;
   title: string = '';
@@ -101,7 +101,7 @@ export class ShowContentComponent implements OnInit {
     snackRef.afterDismissed().subscribe(()=>{
       if(!this.isUndo){
         this.data.onDeleteTask(id).subscribe(() => {
-          console.log("delete item successfully");
+          console.log("Nota eliminada correctamente");
         });
       }
     })

@@ -8,7 +8,7 @@ export class DataService {
   cards:any=[];
   welcomeId:any;
   userToken:string='';
-  apiUrl='https://ng-angular-project-1adbc-default-rtdb.firebaseio.com/';
+  apiUrl='https://ng-angular-project-1adbc-default-rtdb.firebaseio.com/';/*Dirección de mi database de firebase*/
   isEdit: boolean=false;
   singleNoteId:any;
   constructor(private http:HttpClient) { }

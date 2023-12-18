@@ -36,7 +36,7 @@ export class AddTaskComponent implements OnInit {
   onAddingTask() {
     this.data.onSendRequest(this.myForm.value).subscribe((res) => {
       if (res) {
-        this.openSnackBar("Task Added","X");
+        this.openSnackBar("Nota creada","X");
         this.route.navigate(['notes']);
       } else {
         console.log('Error in Send API');
@@ -65,11 +65,10 @@ export class AddTaskComponent implements OnInit {
       if(res){
         console.log(res);
         this.route.navigate(['notes']);
-        this.openSnackBar("Task Edit Successfully","X");
+        this.openSnackBar("Nota editada correctamente","X");
       }
       else{
-        this.openSnackBar(`Something Went Wrong! please try
-        again`,"X");
+        this.openSnackBar(`Algo salió mal, intenta de nuevo`,"X");
       }
     })
     this.data.isEdit=false;
