@@ -70,7 +70,7 @@ export class ShowContentComponent implements OnInit {
         const index=this.cardShow.findIndex((x:any)=> x.id===id);
         this.cardShow.splice(index,1);
         console.log(this.cardShow);
-        this.openSnackBarDelete('Task Deleted', 'UNDO', 4000, id);
+        this.openSnackBarDelete('Nota eliminada correctamente', 'UNDO', 4000, id);
       }
     });
     

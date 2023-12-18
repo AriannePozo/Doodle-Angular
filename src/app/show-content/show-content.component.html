@@ -63,7 +63,7 @@
       <mat-card-actions>
         <button
           mat-stroked-button
-          matTooltip="Task Priority"
+          matTooltip="Prioridad"
           matTootip="priority"
           [color]="getColor(card.priority)"
         >
@@ -72,7 +72,7 @@
         <div>
           <button
             mat-icon-button
-            matTooltip="Delete Task"
+            matTooltip="Eliminar"
             color="warn"
             (click)="onDeleteTask(card.id)"
             aria-label="Example icon button with a delete icon"
@@ -82,7 +82,7 @@
           </button>
           <button
             mat-icon-button
-            matTooltip="Edit Task"
+            matTooltip="Editar"
             color="primary"
             aria-label="Example icon button with a home icon"
             (click)="onEditTask(card.id)"

@@ -114,8 +114,23 @@ h2:hover {
 .logout {
   width: 215px;
   height: 55px;
-  background-color: #3D3B8E;
+  background-color: #566d9b;
   color: #ffff;
   border-width: 0;
   border-radius: 5px;
+}
+
+
+
+.cardContent p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: small;
+}
+.cardTitle{
+  background-color: #6883BA;
+  color: #ffff;
+}
+.cardTitle .cardsTitle{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
 }
