@@ -1,11 +1,24 @@
+@font-face {
+	font-family: 'RubikBubbles';
+	src: url('/assets/fonts/RubikBubbles-Regular.ttf') format('truetype');
+}
+ 
+@font-face {
+	font-family: 'Rowdies';
+	src: url('/assets/fonts/Rowdies-Regular.ttf') format('truetype');
+}
+
 .wels{
-    margin-top: 10px;
+    margin: 120px auto;
     display: flex;
     justify-content: center;
 }
 
 .wels h1{
     margin-top: 10px;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 45px;
+    color: #5390d9;
 }
 
 .intro{
@@ -20,6 +33,10 @@
 	text-decoration: none;
 	cursor: pointer;
 }
+.intro button{
+    margin: 5px auto;
+}
+
 .error{
     font-size: 12px;
     color: red;

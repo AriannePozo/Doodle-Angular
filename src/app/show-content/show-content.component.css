@@ -67,7 +67,7 @@ h2{
 }
 
 h2:hover {
-  animation: colorChange 5s infinite; /* 4 segundos de duración, repetición infinita */
+  animation: colorChange 5s infinite; /* 5 segundos de duración, repetición infinita */
   cursor: pointer;
 }
 

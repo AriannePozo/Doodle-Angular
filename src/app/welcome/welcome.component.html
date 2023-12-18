@@ -1,14 +1,14 @@
 <app-header></app-header>
 
 <div class="wels" *ngIf="isLoging"><h1>Inicio de Sesión</h1></div>
-<div class="wels" *ngIf="!isLoging"><h1>Registro</h1></div>
-
-<div class="intro" *ngIf="!isLoging"><p style="font-size: 18px">Crear Cuenta</p></div>
+<div class="wels" *ngIf="!isLoging"><h1>Registro de Cuenta</h1></div>
+<!-- 
+<div class="intro" *ngIf="!isLoging"><p style="font-size: 18px">Crear Cuenta</p></div> -->
 
 <div class="wels">
   <form class="example-form" [formGroup]="welcomeForm">
     <div>
-      
+
       <mat-form-field appearance="outline">
         <mat-label>Email</mat-label>
         <input

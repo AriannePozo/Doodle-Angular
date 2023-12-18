@@ -109,7 +109,7 @@ export class ShowContentComponent implements OnInit {
   }
 
   onNewUser() {
-    this.route.navigate(['welcome']);
+    this.route.navigate(['welcome']); /* Se dirige a welcome.component.ts */       /*Las rutas de navegacion estan en app.module.ts*/
   }
 
   applyFilter(event: Event) {

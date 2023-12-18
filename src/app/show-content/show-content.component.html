@@ -1,6 +1,6 @@
 <div *ngIf="!isAccess" class="noData">
   <h2>¡Inicia Sesión para ver tus notas!</h2>
-  <button class="click" (click)="onNewUser()">Iniciar Sesión</button>
+   <button class="click" (click)="onNewUser()">Iniciar Sesión</button> <!-- Llama a la funcion onNewUser() de show-content.component.ts -->
 </div>
 
 <div *ngIf="isAccess && !isLoading" class="myfield">
