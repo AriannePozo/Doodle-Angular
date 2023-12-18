@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'RubikBubbles';
+	src: url('/assets/fonts/RubikBubbles-Regular.ttf') format('truetype');
+}
+ 
+@font-face {
+	font-family: 'Rowdies';
+	src: url('/assets/fonts/Rowdies-Regular.ttf') format('truetype');
+}
+
 .example-card {
   position: relative;
   max-width: 300px;
@@ -25,9 +35,40 @@
     font-size: 20px;
     justify-content:flex-start;
   }
-.noData{
-    margin-top: 30px;
+
+.noData{  /*Información de la index*/
+    margin: 120px auto;
     text-align: center;
+}
+
+h2{
+  font-family: 'Rowdies', sans-serif;
+  color: #5c677d; /* Color inicial del texto */
+  white-space: nowrap; /* Evita el salto de línea para que la animación se realice por palabra */
+  font-size: 25px;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #5c677d; /* Color inicial */
+  }
+  25% {
+    color: #0096C7; /* Color a los 25% de la animación */
+  }
+  50% {
+    color: #0077B6; /* Color a los 50% de la animación */
+  }
+  75% {
+    color: #023E8A; /* Color a los 75% de la animación */
+  }
+  100% {
+    color: #252656; /* Color final (vuelve al color inicial) */
+  }
+}
+
+h2:hover {
+  animation: colorChange 5s infinite; /* 4 segundos de duración, repetición infinita */
+  cursor: pointer;
 }
 
 .deletebtn{
@@ -43,11 +84,19 @@
   display: flex;
     justify-content: center;
 }
-.click{
+.click{ /*Botón del index*/
+  font-size: 18px;
   text-decoration: none;
-  cursor:default;
+  cursor: pointer;
   border: none;
   background-color: white;
+  transition: font-size 0.3s; /* Agregamos transición para suavizar el cambio de tamaño */
+}
+
+.click:hover {
+  font-size: 1.4em; /* Tamaño más grande al posicionar el cursor sobre el botón */
+  font-family: 'Rowdies', sans-serif;
+  color: #3D3B8E;
 }
 .process{
   font-size: 14px;

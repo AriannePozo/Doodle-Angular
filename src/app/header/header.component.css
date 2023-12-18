@@ -1,11 +1,12 @@
 @font-face {
 	font-family: 'RubikBubbles';
 	src: url('/assets/fonts/RubikBubbles-Regular.ttf') format('truetype');
-  }
-  @font-face {
+}
+ 
+@font-face {
 	font-family: 'Rowdies';
 	src: url('/assets/fonts/Rowdies-Regular.ttf') format('truetype');
-  }
+}
 
 
 header {
